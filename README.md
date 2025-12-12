@@ -49,7 +49,7 @@ Also, out of 32 billion rupees of loan lended majority is given to high income b
    Line graph added to show "Default Rate(%) by Employment Type"
 - Step 8 : DAX is used to add new column "Age group"
  ```bash
-
+                   Age group = IF('Loan_default part 412'[Age]<=19,"Teen",IF('Loan_default part 412'[Age]<=39,"Adults",IF('Loan_default part 412'[Age]<=59,"Middle Aged","Senior Citizens")))
  ```
 - Step 12 : In the report view, under the insert tab, two text boxes were added to the canvas, in one of them name of the airlines was mentioned & in the other one company's tagline was written.
 - Step 13 : In the report view, under the insert tab, using shapes option from elements group a rectangle was inserted & similarly using image option company's logo was added to the report design area. 
