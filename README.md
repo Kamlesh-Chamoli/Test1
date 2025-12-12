@@ -25,7 +25,7 @@ Also, out of 32 billion rupees of loan lended majority is given to high income b
                      Loan amount by purpose = SUMX(FILTER('Loan_default part 412',NOT(ISBLANK           
                      ('Loan_default part 412'[LoanAmount]))),'Loan_default part 412'[LoanAmount])
 ```
- A line graph was used to show "Loan amount taken for different purposes".
+ A line graph was used to show "Loan Amount Taken For Different Purposes".
 
 <img width="417" height="303" alt="loan amount by purpose" src="https://github.com/user-attachments/assets/07dcef10-4df4-4527-8052-19b74606bf6d" />
 
@@ -39,7 +39,7 @@ Also, out of 32 billion rupees of loan lended majority is given to high income b
                     412'[Income]),ALLEXCEPT('Loan_default part 412','Loan_default part 412'
                     [EmploymentType]))
 ```
-  Line graph added to show "Average income by employement type".    
+  Line graph added to show "Average Income By Employement Type".    
 
 
 
@@ -55,14 +55,16 @@ Also, out of 32 billion rupees of loan lended majority is given to high income b
    
 - Step 8 : DAX is used to add new column "Age group"
  ```bash
-                   Age group = IF('Loan_default part 412'[Age]<=19,"Teen",IF('Loan_default part 412'[Age]<=39,"Adults",IF('Loan_default part 412'[Age]<=59,"Middle Aged","Senior Citizens")))
+                   Age group = IF('Loan_default part 412'[Age]<=19,"Teen",
+                               IF('Loan_default part 412'[Age]<=39,"Adults",
+                               IF('Loan_default part 412'[Age]<=59,"Middle Aged","Senior Citizens")))
  ```
 
   Another DAX is used to find "Average loan"
 ```bash
                   Average loan = AVERAGE('Loan_default part 412'[LoanAmount])
 ```
-Line graph added to show "Average Loan by Age group"
+Line graph added to show "Average Loan By Age Group"
 
 - Step 12 : DAX is used to create new column "Year"
 ```bash
@@ -78,7 +80,19 @@ Another DAX is used to find "Default Rate per year"
 ```
 Line graph is used to show "Default Rate(%) Per Year"
 
-- Step 13 : In the report view, under the insert tab, using shapes option from elements group a rectangle was inserted & similarly using image option company's logo was added to the report design area. 
+- Step 13 : DAX is used to find "Credit Score bins"
+```bash
+
+                Credit Score bins = IF('Loan_default part 412'[CreditScore]<=400,"Very Low",
+                IF('Loan_default part 412'[CreditScore]<=450,"Low",
+                IF('Loan_default part 412'[CreditScore]<=650,"Medium","High")))
+```
+Another DAX is used to find "Median Loan amount"
+```bash
+
+               Median Loan amount = MEDIANX('Loan_default part 412','Loan_default part 412'[LoanAmount])
+```
+Line graph is used to show "Median Loan Amount by Credit Score Category"
 - Step 14 : Calculated column was created in which, customers were grouped into various age groups.
 
 for creating new column following DAX expression was written;
