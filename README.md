@@ -155,12 +155,13 @@ Ribbon chart is used to show "YTD Loan Amount by Credit Score bins and Marital S
 - Step 21 : Decomposition tree is used to show relation between "Total Loan Taken" , "Income Bracket" and "Employement Type"
 <img width="634" height="309" alt="Decomposition Tree" src="https://github.com/user-attachments/assets/90c26190-4873-42ee-a3c2-26326b6c0b7b" />
 
-A three page report is created 
-# Snapshot of all 3 pages
+# Snapshot of all 3 pages of report 
 # Page 1
 <img width="1315" height="737" alt="Page 1" src="https://github.com/user-attachments/assets/acd2dfb0-a1ca-4068-80c8-ca4af25793f2" />
+
 # Page 2
 <img width="1318" height="747" alt="Page 2" src="https://github.com/user-attachments/assets/060389e5-355d-4491-80c8-8401f53b3f0a" />
+
 # Page 3
 <img width="1313" height="736" alt="Page 3" src="https://github.com/user-attachments/assets/5d5a2d0e-3d83-490b-8dae-2b3cc432b865" />
 
