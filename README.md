@@ -22,8 +22,8 @@ Also, out of 32 billion rupees of loan lended majority is given to high income b
 - Step 4 : It was observed that in none of the column has errors.  
 - Step 5 : DAX is used to find "Total loan"              
 ```bash
-                        Loan amount by purpose = SUMX(FILTER('Loan_default part 412',NOT(ISBLANK           
-                        ('Loan_default part 412'[LoanAmount]))),'Loan_default part 412'[LoanAmount])
+                       Loan amount by purpose = SUMX(FILTER('Loan_default part 412',NOT(ISBLANK           
+                       ('Loan_default part 412'[LoanAmount]))),'Loan_default part 412'[LoanAmount])
 ```
  A line graph was used to show "Loan amount taken for different purposes".
 
@@ -35,9 +35,9 @@ Also, out of 32 billion rupees of loan lended majority is given to high income b
 
 - Step 6 : DAX is used to find "Average income by employment type"
 ```bash
-                        Average income by employment type = CALCULATE(AVERAGE('Loan_default part  
-                        412'[Income]),ALLEXCEPT('Loan_default part 412','Loan_default part 412'
-                        [EmploymentType]))
+                     Average income by employment type = CALCULATE(AVERAGE('Loan_default part  
+                     412'[Income]),ALLEXCEPT('Loan_default part 412','Loan_default part 412'
+                     [EmploymentType]))
 ```
   Line graph added to show "Average income by employement type".    
 
