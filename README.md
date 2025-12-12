@@ -71,7 +71,10 @@ Line graph added to show "Average Loan by Age group"
 Another DAX is used to find "Default Rate per year"
 ```bash
 
-                 Default Rate per year = var total=CALCULATE(COUNTROWS('Loan_default part 412'),ALLEXCEPT('Loan_default part 412','Loan_default part 412'[Year]))    var default=CALCULATE(COUNTROWS(FILTER('Loan_default part 412','Loan_default part                                        412'[Default]=TRUE())),ALLEXCEPT('Loan_default part 412','Loan_default part 412'[Year]))     return DIVIDE(default,total)*100
+                 Default Rate per year = var total=CALCULATE(COUNTROWS('Loan_default part 412'),ALLEXCEPT('Loan_default part 412','Loan_default part 412'[Year]))
+                 var default=CALCULATE(COUNTROWS(FILTER('Loan_default part 412','Loan_default part
+                 412'[Default]=TRUE())),ALLEXCEPT('Loan_default part 412','Loan_default part 412'[Year]))
+                 return DIVIDE(default,total)*100
 ```
 Line graph is used to show "Default Rate(%) Per Year"
 
