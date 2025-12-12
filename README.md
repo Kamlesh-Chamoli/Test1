@@ -64,7 +64,17 @@ Also, out of 32 billion rupees of loan lended majority is given to high income b
 ```
 Line graph added to show "Average Loan by Age group"
 
-- Step 12 : In the report view, under the insert tab, two text boxes were added to the canvas, in one of them name of the airlines was mentioned & in the other one company's tagline was written.
+- Step 12 : DAX is used to create new column "Year"
+```bash
+                  Year = YEAR('Loan_default part 412'[Loan_Date_DD_MM_YYYY])
+```
+Another DAX is used to find "Default Rate per year"
+```bash
+
+                 Default Rate per year = var total=CALCULATE(COUNTROWS('Loan_default part 412'),ALLEXCEPT('Loan_default part 412','Loan_default part 412'[Year]))    var default=CALCULATE(COUNTROWS(FILTER('Loan_default part 412','Loan_default part                                        412'[Default]=TRUE())),ALLEXCEPT('Loan_default part 412','Loan_default part 412'[Year]))     return DIVIDE(default,total)*100
+```
+Line graph is used to show "Default Rate(%) Per Year"
+
 - Step 13 : In the report view, under the insert tab, using shapes option from elements group a rectangle was inserted & similarly using image option company's logo was added to the report design area. 
 - Step 14 : Calculated column was created in which, customers were grouped into various age groups.
 
