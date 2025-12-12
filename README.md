@@ -23,7 +23,7 @@ Also, out of 32 billion rupees of loan lended majority is given to high income b
 - Step 5 : DAX is used to find "Total loan"              
 ```bash
                            Loan amount by purpose = SUMX(FILTER('Loan_default part 412',NOT(ISBLANK           
-               ('Loan_default part 412'[LoanAmount]))),'Loan_default part 412'[LoanAmount])
+                         ('Loan_default part 412'[LoanAmount]))),'Loan_default part 412'[LoanAmount])
 ```
  A line graph was used to show "Loan amount taken for different purposes".
 
