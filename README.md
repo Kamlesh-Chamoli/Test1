@@ -93,25 +93,16 @@ Another DAX is used to find "Median Loan amount"
                Median Loan amount = MEDIANX('Loan_default part 412','Loan_default part 412'[LoanAmount])
 ```
 Line graph is used to show "Median Loan Amount by Credit Score Category"
-- Step 14 : Calculated column was created in which, customers were grouped into various age groups.
+- Step 14 : DAX is used to find "Average Loan Amount(High category)"
+```bash
 
-for creating new column following DAX expression was written;
-       
-        Age Group = 
-        
-        if(airline_passenger_satisfaction[Age]<=25, "0-25 (25 included)",
-        
-        if(airline_passenger_satisfaction[Age]<=50, "25-50 (50 included)",
-        
-        if(airline_passenger_satisfaction[Age]<=75, "50-75 (75 included)",
-        
-        "75-100 (100 included)")))
-        
-Snap of new calculated column ,
+               Average Loan Amount(High category) = AVERAGEX(FILTER('Loan_default part 412',
+              'Loan_default part 412'[Credit Score bins]="High"),'Loan_default part 412'[LoanAmount])
+```
+Donut chart is used to show "Average Loan Amount(High credit score) by Age group and MaritalStatus"
 
-![Snap_1](https://github.com/user-attachments/assets/4c8cfe80-a654-49bf-a05a-cd9763d66827.jpg)
+<img width="685" height="311" alt="Average Loan Amount(High credit score) by Age group and MaritalStatus" src="https://github.com/user-attachments/assets/f0dd9e17-cb18-49a3-99aa-eaebc3bc7835" />
 
-        
 - Step 15 : New measure was created to find total count of customers.
 
 Following DAX expression was written for the same,
