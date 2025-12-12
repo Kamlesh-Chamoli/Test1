@@ -143,7 +143,13 @@ Line chart is created to show "YOY % Change Sum Of Loan Amount Taken"
             var previous=CALCULATE(COUNTROWS(FILTER('Loan_default part 412','Loan_default part 412'[Default]=TRUE())),'Loan_default part 412'[Year]=YEAR(MAX('Loan_default part 412'[Loan_Date_DD_MM_YYYY]))-1)
             RETURN DIVIDE(currents-previous,previous,0)*100
 ```
+- Step 20 : DAX is used to find "YTD Loan Amount"
+```bash
+
+            YTD Loan Amount = TOTALYTD(SUM('Loan_default part 412'[LoanAmount]),'Loan_default part 412'[Loan_Date_DD_MM_YYYY].[Date])
+```
 Line chart is created to show "YOY % Change Of Number of Loan Taken"
+
 # Insights
 
 A single page report was created on Power BI Desktop & it was then published to Power BI Service.
