@@ -127,21 +127,23 @@ Culstered column chart is used to show "Total Loan (Middle aged) Having Mortgage
              Number of Loans = COUNTROWS(FILTER('Loan_default part 412',NOT(ISBLANK('Loan_default part 412'[LoanID]))))
  ```
 Line chart is used to show "Number of Loans By Education Type"
- - Step 18 : The report was then published to Power BI Service.
- 
- 
-![Publish_Message](https://user-images.githubusercontent.com/102996550/174094520-3a845196-97e6-4d44-8760-34a64abc3e77.jpg)
+ - Step 18 : DAX is used to find "YoY Loan amount change"
+```bash
 
-# Snapshot of Dashboard (Power BI Service)
+            YoY Loan amount change = Var currents=CALCULATE(SUM('Loan_default part 412'[LoanAmount]),'Loan_default part 412'[Year]=YEAR(MAX('Loan_default part 412'[Loan_Date_DD_MM_YYYY])))
+            Var Previous=CALCULATE(SUM('Loan_default part 412'[LoanAmount]),'Loan_default part 412'[Year]=YEAR(MAX('Loan_default part 412'[Loan_Date_DD_MM_YYYY]))-1)
+            RETURN    DIVIDE(currents-Previous,Previous,0)*100
+```
+Line chart is created to show "YOY % Change Sum Of Loan Amount Taken"
 
-![dashboard_snapo](https://user-images.githubusercontent.com/102996550/174096257-11f1aae5-203d-44fc-bfca-25d37faf3237.jpg)
+-Step 19 DAX is used to find "YOY Default Loan change"
+```bash
 
- 
- # Report Snapshot (Power BI DESKTOP)
-
- 
-![Dashboard_upload](https://user-images.githubusercontent.com/102996550/174074051-4f08287a-0568-4fdf-8ac9-6762e0d8fa94.jpg)
-
+            YOY Default Loan change = var currents =CALCULATE(COUNTROWS(FILTER('Loan_default part 412','Loan_default part 412'[Default]=TRUE())),'Loan_default part 412'[Year]=YEAR(MAX('Loan_default part 412'[Loan_Date_DD_MM_YYYY])))
+            var previous=CALCULATE(COUNTROWS(FILTER('Loan_default part 412','Loan_default part 412'[Default]=TRUE())),'Loan_default part 412'[Year]=YEAR(MAX('Loan_default part 412'[Loan_Date_DD_MM_YYYY]))-1)
+            RETURN DIVIDE(currents-previous,previous,0)*100
+```
+Line chart is created to show "YOY % Change Of Number of Loan Taken"
 # Insights
 
 A single page report was created on Power BI Desktop & it was then published to Power BI Service.
