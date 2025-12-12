@@ -40,10 +40,11 @@ Also, out of 32 billion rupees of loan lended majority is given to high income b
   Line graph added to show "Average income by employement type".    
 
 - Step 7 : DAX is used to find "Default rate vis-a-vis to total by employment type"
-```bash   
-                        Default rate vis-a-vis to total by employment type = var total=COUNTROWS(ALL('Loan_default part 412'))     
-                        var default=COUNTROWS(FILTER('Loan_default part 412','Loan_default part 412'[Default]=TRUE()))       
-         r              eturn CALCULATE(DIVIDE(default,total))*100
+```bash
+
+                   Default rate vis-a-vis to total by employment type = var total=COUNTROWS(ALL('Loan_default part 412'))     
+                   var default=COUNTROWS(FILTER('Loan_default part 412','Loan_default part 412'[Default]=TRUE()))       
+                   return CALCULATE(DIVIDE(default,total))*100
 ```
    Line graph added to show "Default Rate(%) by Employment Type"
 - Step 8 : Ratings Visual was used to represent different ratings mentioned below,
