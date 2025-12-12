@@ -31,6 +31,8 @@ Also, out of 32 billion rupees of loan lended majority is given to high income b
 
   
 
+
+
 - Step 6 : DAX is used to find "Average income by employment type"
 ```bash
                         Average income by employment type = CALCULATE(AVERAGE('Loan_default part  
@@ -38,6 +40,8 @@ Also, out of 32 billion rupees of loan lended majority is given to high income b
                         [EmploymentType]))
 ```
   Line graph added to show "Average income by employement type".    
+
+
 
 - Step 7 : DAX is used to find "Default rate vis-a-vis to total by employment type"
 ```bash
@@ -47,6 +51,8 @@ Also, out of 32 billion rupees of loan lended majority is given to high income b
                    return CALCULATE(DIVIDE(default,total))*100
 ```
    Line graph added to show "Default Rate(%) by Employment Type"
+
+   
 - Step 8 : DAX is used to add new column "Age group"
  ```bash
                    Age group = IF('Loan_default part 412'[Age]<=19,"Teen",IF('Loan_default part 412'[Age]<=39,"Adults",IF('Loan_default part 412'[Age]<=59,"Middle Aged","Senior Citizens")))
@@ -56,6 +62,8 @@ Also, out of 32 billion rupees of loan lended majority is given to high income b
 ```bash
                   Average loan = AVERAGE('Loan_default part 412'[LoanAmount])
 ```
+Line graph added to show "Average Loan by Age group"
+
 - Step 12 : In the report view, under the insert tab, two text boxes were added to the canvas, in one of them name of the airlines was mentioned & in the other one company's tagline was written.
 - Step 13 : In the report view, under the insert tab, using shapes option from elements group a rectangle was inserted & similarly using image option company's logo was added to the report design area. 
 - Step 14 : Calculated column was created in which, customers were grouped into various age groups.
