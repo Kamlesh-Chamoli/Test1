@@ -136,7 +136,7 @@ Line chart is used to show "Number of Loans By Education Type"
 ```
 Line chart is created to show "YOY % Change Sum Of Loan Amount Taken"
 
--Step 19 DAX is used to find "YOY Default Loan change"
+- Step 19 : DAX is used to find "YOY Default Loan change"
 ```bash
 
             YOY Default Loan change = var currents =CALCULATE(COUNTROWS(FILTER('Loan_default part 412','Loan_default part 412'[Default]=TRUE())),'Loan_default part 412'[Year]=YEAR(MAX('Loan_default part 412'[Loan_Date_DD_MM_YYYY])))
