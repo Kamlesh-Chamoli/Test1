@@ -143,12 +143,17 @@ Line chart is created to show "YOY % Change Sum Of Loan Amount Taken"
             var previous=CALCULATE(COUNTROWS(FILTER('Loan_default part 412','Loan_default part 412'[Default]=TRUE())),'Loan_default part 412'[Year]=YEAR(MAX('Loan_default part 412'[Loan_Date_DD_MM_YYYY]))-1)
             RETURN DIVIDE(currents-previous,previous,0)*100
 ```
+Line chart is created to show "YOY % Change Of Number of Loan Taken"
+
 - Step 20 : DAX is used to find "YTD Loan Amount"
 ```bash
 
             YTD Loan Amount = TOTALYTD(SUM('Loan_default part 412'[LoanAmount]),'Loan_default part 412'[Loan_Date_DD_MM_YYYY].[Date])
 ```
-Line chart is created to show "YOY % Change Of Number of Loan Taken"
+Ribbon chart is used to show "YTD Loan Amount by Credit Score bins and Marital Status"
+
+- Step 21 : Decomposition tree is used to show relation between "Total Loan Taken" , "Income Bracket" and "Employement Type"
+<img width="634" height="309" alt="Decomposition Tree" src="https://github.com/user-attachments/assets/90c26190-4873-42ee-a3c2-26326b6c0b7b" />
 
 # Insights
 
