@@ -47,38 +47,10 @@ Also, out of 32 billion rupees of loan lended majority is given to high income b
                    return CALCULATE(DIVIDE(default,total))*100
 ```
    Line graph added to show "Default Rate(%) by Employment Type"
-- Step 8 : Ratings Visual was used to represent different ratings mentioned below,
+- Step 8 : DAX is used to add new column "Age group"
+ ```bash
 
-  (a) Baggage Handling
-
-  (b) Check-in Services
-  
-  (c) Cleanliness
-  
-  (d) Ease of online booking
-  
-  (e) Food & Drink
-  
-  (f) In-flight Entertainment
-
-  (g) In-flight Service
-  
-  (h) In-flight wifi service
-  
-  (i) Leg Room service
-  
-  (j) On-board service
-  
-  (k) Online boarding
-  
-  (l) Seat comfort
-  
-  (m) Departure & arrival time convenience
-  
-In our dataset, Some parameters were assigned value 0, representing those parameters are not applicable for some customers.
-
-All these values have been ignored while calculating average rating for each of the parameters mentioned above.
-
+ ```
 - Step 12 : In the report view, under the insert tab, two text boxes were added to the canvas, in one of them name of the airlines was mentioned & in the other one company's tagline was written.
 - Step 13 : In the report view, under the insert tab, using shapes option from elements group a rectangle was inserted & similarly using image option company's logo was added to the report design area. 
 - Step 14 : Calculated column was created in which, customers were grouped into various age groups.
