@@ -16,8 +16,9 @@ Also, out of 32 billion rupees of loan lended majority is given to high income b
 - Step 1 : Load data into Power BI Desktop from sql server, dataset is an csv file.
 - Step 2 : Open power query editor & in view tab under Data preview section, check "column distribution", "column quality" & "column profile" options.
 - Step 3 : Also since by default, profile will be opened only for 1000 rows so you need to select "column profiling based on entire dataset".
-- Step 4 : It was observed that in none of the column has errors.  
-- Step 5 : DAX is used to find "Total loan"              
+- Step 4 : It was observed that in none of the column has errors.
+- Step 5 : A Rounded rectangle is added at top of page using Inset>Shape>Rounded rectangle.Text written inside it is "Loan Default Overview" 
+- Step 6 : DAX is used to find "Total loan"              
 ```bash
                      Loan amount by purpose = SUMX(FILTER('Loan_default part 412',NOT(ISBLANK           
                      ('Loan_default part 412'[LoanAmount]))),'Loan_default part 412'[LoanAmount])
@@ -30,7 +31,7 @@ Also, out of 32 billion rupees of loan lended majority is given to high income b
 
 
 
-- Step 6 : DAX is used to find "Average income by employment type"
+- Step 7 : DAX is used to find "Average income by employment type"
 ```bash
                     Average income by employment type = CALCULATE(AVERAGE('Loan_default part  
                     412'[Income]),ALLEXCEPT('Loan_default part 412','Loan_default part 412'
@@ -40,7 +41,7 @@ Also, out of 32 billion rupees of loan lended majority is given to high income b
 
 
 
-- Step 7 : DAX is used to find "Default rate vis-a-vis to total by employment type"
+- Step 8 : DAX is used to find "Default rate vis-a-vis to total by employment type"
 ```bash
 
                    Default rate vis-a-vis to total by employment type = var total=COUNTROWS(ALL('Loan_default part 412'))     
@@ -50,7 +51,7 @@ Also, out of 32 billion rupees of loan lended majority is given to high income b
    Line graph added to show "Default Rate(%) by Employment Type"
 
    
-- Step 8 : DAX is used to add new column "Age group"
+- Step 9 : DAX is used to add new column "Age group"
  ```bash
                    Age group = IF('Loan_default part 412'[Age]<=19,"Teen",
                                IF('Loan_default part 412'[Age]<=39,"Adults",
@@ -63,7 +64,7 @@ Also, out of 32 billion rupees of loan lended majority is given to high income b
 ```
 Line graph added to show "Average Loan By Age Group"
 
-- Step 12 : DAX is used to create new column "Year"
+- Step 10 : DAX is used to create new column "Year"
 ```bash
                   Year = YEAR('Loan_default part 412'[Loan_Date_DD_MM_YYYY])
 ```
@@ -77,7 +78,8 @@ Another DAX is used to find "Default Rate per year"
 ```
 Line graph is used to show "Default Rate(%) Per Year"
 
-- Step 13 : DAX is used to find "Credit Score bins"
+- Step 11 : A Rounded rectangle is added at top of page using Inset>Shape>Rounded rectangle.Text written inside it is "Applicant Demographic & Financial Profile"
+- Step 12 : DAX is used to find "Credit Score bins"
 ```bash
 
                 Credit Score bins = IF('Loan_default part 412'[CreditScore]<=400,"Very Low",
@@ -90,7 +92,7 @@ Another DAX is used to find "Median Loan amount"
                Median Loan amount = MEDIANX('Loan_default part 412','Loan_default part 412'[LoanAmount])
 ```
 Line graph is used to show "Median Loan Amount by Credit Score Category"
-- Step 14 : DAX is used to find "Average Loan Amount(High category)"
+- Step 13 : DAX is used to find "Average Loan Amount(High category)"
 ```bash
 
                Average Loan Amount(High category) = AVERAGEX(FILTER('Loan_default part 412',
@@ -100,7 +102,7 @@ Donut chart is used to show "Average Loan Amount(High credit score) by Age group
 
 <img width="685" height="311" alt="Average Loan Amount(High credit score) by Age group and MaritalStatus" src="https://github.com/user-attachments/assets/f0dd9e17-cb18-49a3-99aa-eaebc3bc7835" />
 
-- Step 15 : DAX is used to find "Total Loan(Adults)"
+- Step 14 : DAX is used to find "Total Loan(Adults)"
 ```bash
 
                Total Loan(Adults) = SUMX(FILTER('Loan_default part 412','Loan_default part 412'[Age group]="Adults"),
@@ -108,7 +110,7 @@ Donut chart is used to show "Average Loan Amount(High credit score) by Age group
 ```
 Line graph is used to show "Total Loan (Adults) by Credit Score Bins"
         
-- Step 16 : DAX is used to find "Total Loan (Middle aged)"
+- Step 15 : DAX is used to find "Total Loan (Middle aged)"
 ```bash
 
               Total Loan (Middle aged) = SUMX(FILTER('Loan_default part 412','Loan_default part 412'[Age group]="Middle Aged"),
@@ -118,12 +120,13 @@ Culstered column chart is used to show "Total Loan (Middle aged) Having Mortgage
 <img width="425" height="307" alt="Total Loan (Middle aged) Having Mortgage" src="https://github.com/user-attachments/assets/249dedd5-03a5-4977-b3c1-f664927e7c6e" />
 
  
- - Step 17 : DAX is used to find "Number of Loans"
+ - Step 16 : DAX is used to find "Number of Loans"
 ```bash
 
              Number of Loans = COUNTROWS(FILTER('Loan_default part 412',NOT(ISBLANK('Loan_default part 412'[LoanID]))))
  ```
 Line chart is used to show "Number of Loans By Education Type"
+- Step 17 : A Rounded rectangle is added at top of page using Inset>Shape>Rounded rectangle.Text written inside it is "Financial Risk matrics"
  - Step 18 : DAX is used to find "YoY Loan amount change"
 ```bash
 
