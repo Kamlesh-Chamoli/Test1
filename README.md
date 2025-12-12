@@ -27,7 +27,8 @@ Also, out of 32 billion rupees of loan lended majority is given to high income b
 ```
  A line graph was used to show "Loan amount taken for different purposes".
 
-![Loan Purpose Chart](https://drive.google.com/file/d/1sNqpWsfyjGeNvX-HlivMDWe49tksMTQ7/view?usp=sharing)
+<img width="417" height="303" alt="loan amount by purpose" src="https://github.com/user-attachments/assets/07dcef10-4df4-4527-8052-19b74606bf6d" />
+
   
 
 - Step 6 : DAX is used to find "Average income by employment type"
