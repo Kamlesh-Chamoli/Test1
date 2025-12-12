@@ -103,41 +103,30 @@ Donut chart is used to show "Average Loan Amount(High credit score) by Age group
 
 <img width="685" height="311" alt="Average Loan Amount(High credit score) by Age group and MaritalStatus" src="https://github.com/user-attachments/assets/f0dd9e17-cb18-49a3-99aa-eaebc3bc7835" />
 
-- Step 15 : New measure was created to find total count of customers.
+- Step 15 : DAX is used to find "Total Loan(Adults)"
+```bash
 
-Following DAX expression was written for the same,
+               Total Loan(Adults) = SUMX(FILTER('Loan_default part 412','Loan_default part 412'[Age group]="Adults"),
+               'Loan_default part 412'[LoanAmount])
+```
+Line graph is used to show "Total Loan (Adults) by Credit Score Bins"
         
-        Count of Customers = COUNT(airline_passenger_satisfaction[ID])
-        
-A card visual was used to represent count of customers.
+- Step 16 : DAX is used to find "Total Loan (Middle aged)"
+```bash
 
-![Snap_Count](https://user-images.githubusercontent.com/102996550/174090154-424dc1a4-3ff7-41f8-9617-17a2fb205825.jpg)
-
-        
- - Step 16 : New measure was created to find  % of customers,
- 
- Following DAX expression was written to find % of customers,
- 
-         % Customers = (DIVIDE(airline_passenger_satisfaction[Count of Customers], 129880)*100)
- 
- A card visual was used to represent this perecntage.
- 
- Snap of % of customers who preferred business class
- 
- ![Snap_Percentage](https://user-images.githubusercontent.com/102996550/174090653-da02feb4-4775-4a95-affb-a211ca985d07.jpg)
+              Total Loan (Middle aged) = SUMX(FILTER('Loan_default part 412','Loan_default part 412'[Age group]="Middle Aged"),
+             'Loan_default part 412'[LoanAmount])
+```
+Culstered column chart is used to show "Total Loan (Middle aged) Having Mortgage /Dependents"
+<img width="425" height="307" alt="Total Loan (Middle aged) Having Mortgage" src="https://github.com/user-attachments/assets/249dedd5-03a5-4977-b3c1-f664927e7c6e" />
 
  
- - Step 17 : New measure was created to calculate total distance travelled by flights & a card visual was used to represent total distance.
- 
- Following DAX expression was written to find total distance,
- 
-         Total Distance Travelled = SUM(airline_passenger_satisfaction[Flight Distance])
-    
- A card visual was used to represent this total distance.
- 
- 
- ![Snap_3](https://user-images.githubusercontent.com/102996550/174091618-bf770d6c-34c6-44d4-9f5e-49583a6d5f68.jpg)
- 
+ - Step 17 : DAX is used to find "Number of Loans"
+```bash
+
+             Number of Loans = COUNTROWS(FILTER('Loan_default part 412',NOT(ISBLANK('Loan_default part 412'[LoanID]))))
+ ```
+Line chart is used to show "Number of Loans By Education Type"
  - Step 18 : The report was then published to Power BI Service.
  
  
