@@ -168,7 +168,7 @@ Ribbon chart is used to show "YTD loan amount by credit score bins and marital s
 
 # Insights
 
-A three page report is created adn it was published in power bi services.
+A three page report is created and it was published in power bi services.
 
 Following inferences can be drawn from the Report;
 
@@ -237,6 +237,9 @@ Default rate in 2013 = 11.60
 ```bash
    Default rate is more than 11% on each year so need to focus on this
 ```
+
+### Page 2:Applicant Demographic & Financial Profile
+### E) Default rate(%) per year
 
   ### [3] Average Delay 
   
