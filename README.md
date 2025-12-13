@@ -186,25 +186,18 @@ Following inferences can be drawn from the Report;
 ```bash
    Top three purpose of loan are Home , Business and Education
 ```           
-### [2] Average Ratings
+### B)
+   Average income of "Full time employed" = 82.89 Thousand
 
-    a) Baggage Handling - 3.63/5
-    b) Check-in Service - 3.31/5
-    c) Cleanliness - 3.29/5
-    d) Ease of online booking - 2.88/5
-    e) Food & Drink - 3.21/5
-    f) In-flight Entertainment - 3.36/5
-    g) In-flight service - 3.64/5
-    h) In-flight Wifi service - 2.81/5
-    i) Leg room service - 3.37/5
-    j) On-board service - 3.38/5
-    k) Online boarding - 3.33/5
-    l) Seat comfort - 3.44/5
-    m) Departure & arrival convenience - 3.22/5
-  
-  while calculating average rating, null values have been ignored as they were not relevant for some customers. 
-  
-  These ratings will change if different visual filters will be applied.  
+   Average income of "Self employed" = 82.44 Thousand
+
+   Average income of "Part time employed" = 82.38 Thousand
+
+   Average income of "Unemployed" = 82.27 Thousand
+
+```bash
+   Top three purpose of loan are Home , Business and Education
+```  
   
   ### [3] Average Delay 
   
