@@ -8,7 +8,7 @@ This dashboard helps the company understand their customers better.Through diffe
 
 Since, the default rate per year is more than 11% this imply that company needs to make sure that they get loan back which they are lending.
 
-Also, out of 32 billion rupees of loan lended majority is given to high income bracket leading if company wants to expand their customer base then they should tap to medium and low income bracket.
+Also, out of 32 billion rupees of loan lended majority is given to high income bracket leading if company wants to expand their customer base then they should tap to medium and low income bracket. 
 
 
 ### Steps followed 
@@ -168,22 +168,17 @@ Ribbon chart is used to show "YTD Loan Amount by Credit Score bins and Marital S
 
 # Insights
 
-A single page report was created on Power BI Desktop & it was then published to Power BI Service.
+A three page report is created adn it was published in power bi services.
 
-Following inferences can be drawn from the dashboard;
+Following inferences can be drawn from the Report;
 
-### [1] Total Number of Customers = 129880
-
-   Number of satisfied Customers (Male) = 28159 (21.68 %)
-
-   Number of satisfied Customers (Female) = 28269 (21.76 %)
-
-   Number of neutral/unsatisfied customers (Male) = 35822 (27.58 %)
-
-   Number of neutral/unsatisfied customers (Female) = 37630 (28.97 %)
-
-
-           thus, higher number of customers are neutral/unsatisfied.
+### Page 1: Loan Default and overview
+### A)
+   Loan taken for purpose "Home"= 6545 Million
+   Loan taken for purpose "Business"= 6522 Million
+   Loan taken for purpose "Education"= 6511 Million
+   Loan taken for purpose "Auto"= 6501 Million
+   Loan taken for purpose "Other"= 6498 Million
            
 ### [2] Average Ratings
 
