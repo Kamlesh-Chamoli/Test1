@@ -172,8 +172,8 @@ A three page report is created adn it was published in power bi services.
 
 Following inferences can be drawn from the Report;
 
-### Page 1: Loan Default and overview
-### A)
+### Page 1: Loan default and overview
+### A) Loan amount by purpose
    Loan taken for purpose "Home"= 6545 Million
    
    Loan taken for purpose "Business"= 6522 Million
@@ -186,7 +186,7 @@ Following inferences can be drawn from the Report;
 ```bash
    Top three purpose of loan are Home , Business and Education
 ```           
-### B)
+### B) Average income by employment type
    Average income of "Full time employed" = 82.89 Thousand
 
    Average income of "Self employed" = 82.44 Thousand
