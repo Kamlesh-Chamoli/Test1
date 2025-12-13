@@ -184,7 +184,7 @@ Following inferences can be drawn from the Report;
    
    Loan taken for purpose "Other"= 6498 Million
 ```bash
-        Top three purpose of loan are Home , Business and Education
+      Top three purpose of loan are Home , Business and Education
 ```           
 ### [2] Average Ratings
 
