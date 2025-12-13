@@ -300,20 +300,20 @@ Number of loan taken by "Phd" = 63537
 ### Page 2:Financial Risk Matrics
 ### A) YOY % change on sum of loan amount taken
 ```bash
-   If we look into the graph then in 2014 and 2017 the sum of loan taken is in negative
-   as compared to previous this may indicate market trend or company policy
+   The graph reflects that for the year 2014 and 2017 the sum of loan taken is in negative
+   as compared to previous this may indicate market trend or company policy.
 ```
 ### B) YOY % change of number of loan taken
 ```bash
-   If we look into the graph then in 2014 and 2017 the sum of loan taken is in negative
-   as compared to previous this may indicate market trend or company policy indicating A point above
+   The graph reflects that for the year 2014 and 2017 the number of loan taken is negative
+   as compared to previous this may indicate market trend or company policy indicating (A) point above
 ```
 ### C) YTD loan amount by credit score bins and marital status
 
 ```bash
    If we look into the graph then we can interpret that people with medium and high credit score and 
    divorced take highest amount of loan which is 0.67 Billion.In very low category single people with
-   0.36 Billion and low category married people with 0.17 Billion of loan taken is the highest.
+   0.36 Billion and low category married people with 0.17 Billion of loan taken are the highest.
 ```
 ### D) YTD loan amount by credit score bins and marital status
 
@@ -322,6 +322,3 @@ Number of loan taken by "Phd" = 63537
  is given to high income bracket (66%), 7.2 Billion (22%) to medium income bracket and 3.6 Billion (11%)
  given to low income bracket people
 ```
-
-        thus, more customers have travel type 'Business'.
-Displaying # Airlines-Dashboard.md.txt.
