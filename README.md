@@ -196,7 +196,7 @@ Following inferences can be drawn from the Report;
    Average income of "Unemployed" = 82.27 Thousand
 
 ```bash
-   Each employment category's average earning approximately same.
+   Each employment category has average earning approximately same.
 ```  
  ### C) Default rate(%) by employment type 
   Default rate(%) of "Unemployed" = 3.39
@@ -220,7 +220,7 @@ Following inferences can be drawn from the Report;
    Average loan taken by "Teen"= 126674
    
 ```bash
-   Each age group's average loan borrowing is approximately same.
+   Each age group is having average loan borrowing approximately same.
 ``` 
 ### E) Default rate(%) per year  
 Default rate in 2013 = 11.62
@@ -235,7 +235,7 @@ Default rate in 2013 = 11.50
 
 Default rate in 2013 = 11.60
 ```bash
-   Default rate is more than 11% for each year so need to focus on this
+   Default rate is more than 11% on each year so need to focus on this
 ```
 
   ### [3] Average Delay 
