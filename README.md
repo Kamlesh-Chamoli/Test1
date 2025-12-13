@@ -198,7 +198,46 @@ Following inferences can be drawn from the Report;
 ```bash
    Each employment category's average earning approximately same.
 ```  
-  
+ ### C) Default rate(%) by employment type 
+  Default rate(%) of "Unemployed" = 3.39
+
+  Default rate(%) of "Part time" = 3.01
+
+  Default rate(%) of "Self employed" = 2.86
+
+  Default rate(%) of "Full time" = 2.36
+
+```bash
+   Unemployed people are highest defaulter of loan.
+``` 
+### D) Average loan by age group
+   Average loan taken by "Adults"= 127901
+
+   Average loan taken by "Middle Aged"= 127459
+
+   Average loan taken by "Senior Citizens"= 127355
+
+   Average loan taken by "Teen"= 126674
+   
+```bash
+   Each age group's average loan borrowing is approximately same.
+``` 
+### E) Default rate(%) per year  
+Default rate in 2013 = 11.62
+
+Default rate in 2013 = 11.50
+
+Default rate in 2013 = 11.70
+
+Default rate in 2013 = 11.75
+
+Default rate in 2013 = 11.50
+
+Default rate in 2013 = 11.60
+```bash
+   Default rate is more than 11% for each year so need to focus on this
+```
+
   ### [3] Average Delay 
   
       a) Average delay in arrival(minutes) - 15.09
