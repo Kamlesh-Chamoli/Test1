@@ -8,7 +8,7 @@ This dashboard helps the company understand their customers better.Through diffe
 
 Since, the default rate per year is more than 11% this imply that company needs to make sure that they get loan back which they are lending.
 
-Also, out of 32 billion rupees of loan lended majority is given to high income bracket leading if company wants to expand their customer base then they should tap to medium and low income bracket. 
+Also, out of 32 billion rupees of loan lended majority is given to high income bracket so if company wants to expand their customer base then they should tap to medium and low income bracket. 
 
 
 ### Steps followed 
