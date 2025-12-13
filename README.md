@@ -6,7 +6,7 @@
 
 This dashboard helps the company understand their customers better.Through different charts, they get to know their critical areas like total loan taken for different purposes,default rate per year/employment type & year on year loan amount change be it total loan taken or number of loan taken.Therefore, they can improve their loan lending and receiving strategy by identifying these area.
 
-Since, the default rate per year is more than 11% this imply that company needs to make sure that they get loan back which they are lending.
+Since, the default rate per year is more than 11% this imply that company needs to make sure that they get loan back which they are lending. 
 
 Also, out of 32 billion rupees of loan lended majority is given to high income bracket so if company wants to expand their customer base then they should tap to medium and low income bracket. 
 
