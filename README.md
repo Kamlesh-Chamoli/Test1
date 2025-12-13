@@ -37,18 +37,18 @@ Also, out of 32 billion rupees of loan lended majority is given to high income b
                     412'[Income]),ALLEXCEPT('Loan_default part 412','Loan_default part 412'
                     [EmploymentType]))
 ```
-  Line graph added to show "Average Income By Employement Type".    
+  Line graph added to show "Average income by employement type".    
 
 
 
-- Step 8 : DAX is used to find "Default rate vis-a-vis to total by employment type"
+- Step 8 : DAX is used to find "Default rate %
 ```bash
 
                    Default rate vis-a-vis to total by employment type = var total=COUNTROWS(ALL('Loan_default part 412'))     
                    var default=COUNTROWS(FILTER('Loan_default part 412','Loan_default part 412'[Default]=TRUE()))       
                    return CALCULATE(DIVIDE(default,total))*100
 ```
-   Line graph added to show "Default Rate(%) by Employment Type"
+   Line graph added to show "Default rate(%) by employment type"
 
    
 - Step 9 : DAX is used to add new column "Age group"
@@ -62,13 +62,13 @@ Also, out of 32 billion rupees of loan lended majority is given to high income b
 ```bash
                   Average loan = AVERAGE('Loan_default part 412'[LoanAmount])
 ```
-Line graph added to show "Average Loan By Age Group"
+Line graph added to show "Average loan by age group"
 
 - Step 10 : DAX is used to create new column "Year"
 ```bash
                   Year = YEAR('Loan_default part 412'[Loan_Date_DD_MM_YYYY])
 ```
-Another DAX is used to find "Default Rate per year"
+Another DAX is used to find "Default rate per year"
 ```bash
 
                  Default Rate per year = var total=CALCULATE(COUNTROWS('Loan_default part 412'),ALLEXCEPT('Loan_default part 412','Loan_default part 412'[Year]))
@@ -76,83 +76,83 @@ Another DAX is used to find "Default Rate per year"
                  412'[Default]=TRUE())),ALLEXCEPT('Loan_default part 412','Loan_default part 412'[Year]))
                  return DIVIDE(default,total)*100
 ```
-Line graph is used to show "Default Rate(%) Per Year"
+Line graph is used to show "Default rate(%) per Year"
 
 - Step 11 : A Rounded rectangle is added at top of page using Inset>Shape>Rounded rectangle.Text written inside it is "Applicant Demographic & Financial Profile"
-- Step 12 : DAX is used to find "Credit Score bins"
+- Step 12 : DAX is used to find "Credit score bins"
 ```bash
 
                 Credit Score bins = IF('Loan_default part 412'[CreditScore]<=400,"Very Low",
                 IF('Loan_default part 412'[CreditScore]<=450,"Low",
                 IF('Loan_default part 412'[CreditScore]<=650,"Medium","High")))
 ```
-Another DAX is used to find "Median Loan amount"
+Another DAX is used to find "Median loan amount"
 ```bash
 
                Median Loan amount = MEDIANX('Loan_default part 412','Loan_default part 412'[LoanAmount])
 ```
-Line graph is used to show "Median Loan Amount by Credit Score Category"
-- Step 13 : DAX is used to find "Average Loan Amount(High category)"
+Line graph is used to show "Median loan amount by credit score category"
+- Step 13 : DAX is used to find "Average loan amount(high category)"
 ```bash
 
                Average Loan Amount(High category) = AVERAGEX(FILTER('Loan_default part 412',
               'Loan_default part 412'[Credit Score bins]="High"),'Loan_default part 412'[LoanAmount])
 ```
-Donut chart is used to show "Average Loan Amount(High credit score) by Age group and MaritalStatus"
+Donut chart is used to show "Average loan amount(High credit score) by age group and maritalStatus"
 
 <img width="685" height="311" alt="Average Loan Amount(High credit score) by Age group and MaritalStatus" src="https://github.com/user-attachments/assets/f0dd9e17-cb18-49a3-99aa-eaebc3bc7835" />
 
-- Step 14 : DAX is used to find "Total Loan(Adults)"
+- Step 14 : DAX is used to find "Total loan(adults)"
 ```bash
 
                Total Loan(Adults) = SUMX(FILTER('Loan_default part 412','Loan_default part 412'[Age group]="Adults"),
                'Loan_default part 412'[LoanAmount])
 ```
-Line graph is used to show "Total Loan (Adults) by Credit Score Bins"
+Line graph is used to show "Total loan (adults) by credit score bins"
         
-- Step 15 : DAX is used to find "Total Loan (Middle aged)"
+- Step 15 : DAX is used to find "Total loan (middle aged)"
 ```bash
 
               Total Loan (Middle aged) = SUMX(FILTER('Loan_default part 412','Loan_default part 412'[Age group]="Middle Aged"),
              'Loan_default part 412'[LoanAmount])
 ```
-Culstered column chart is used to show "Total Loan (Middle aged) Having Mortgage /Dependents"
+Culstered column chart is used to show "Total loan (middle aged) having mortgage /dependents"
 <img width="425" height="307" alt="Total Loan (Middle aged) Having Mortgage" src="https://github.com/user-attachments/assets/249dedd5-03a5-4977-b3c1-f664927e7c6e" />
 
  
- - Step 16 : DAX is used to find "Number of Loans"
+ - Step 16 : DAX is used to find "Number of loans"
 ```bash
 
              Number of Loans = COUNTROWS(FILTER('Loan_default part 412',NOT(ISBLANK('Loan_default part 412'[LoanID]))))
  ```
-Line chart is used to show "Number of Loans By Education Type"
+Line chart is used to show "Number of loans by education type"
 - Step 17 : A Rounded rectangle is added at top of page using Inset>Shape>Rounded rectangle.Text written inside it is "Financial Risk matrics"
- - Step 18 : DAX is used to find "YoY Loan amount change"
+ - Step 18 : DAX is used to find "YoY loan amount change"
 ```bash
 
             YoY Loan amount change = Var currents=CALCULATE(SUM('Loan_default part 412'[LoanAmount]),'Loan_default part 412'[Year]=YEAR(MAX('Loan_default part 412'[Loan_Date_DD_MM_YYYY])))
             Var Previous=CALCULATE(SUM('Loan_default part 412'[LoanAmount]),'Loan_default part 412'[Year]=YEAR(MAX('Loan_default part 412'[Loan_Date_DD_MM_YYYY]))-1)
             RETURN    DIVIDE(currents-Previous,Previous,0)*100
 ```
-Line chart is created to show "YOY % Change Sum Of Loan Amount Taken"
+Line chart is created to show "YOY % change sum of loan amount taken"
 
-- Step 19 : DAX is used to find "YOY Default Loan change"
+- Step 19 : DAX is used to find "YOY default loan change"
 ```bash
 
             YOY Default Loan change = var currents =CALCULATE(COUNTROWS(FILTER('Loan_default part 412','Loan_default part 412'[Default]=TRUE())),'Loan_default part 412'[Year]=YEAR(MAX('Loan_default part 412'[Loan_Date_DD_MM_YYYY])))
             var previous=CALCULATE(COUNTROWS(FILTER('Loan_default part 412','Loan_default part 412'[Default]=TRUE())),'Loan_default part 412'[Year]=YEAR(MAX('Loan_default part 412'[Loan_Date_DD_MM_YYYY]))-1)
             RETURN DIVIDE(currents-previous,previous,0)*100
 ```
-Line chart is created to show "YOY % Change Of Number of Loan Taken"
+Line chart is created to show "YOY % change of number of loan taken"
 
-- Step 20 : DAX is used to find "YTD Loan Amount"
+- Step 20 : DAX is used to find "YTD loan amount"
 ```bash
 
             YTD Loan Amount = TOTALYTD(SUM('Loan_default part 412'[LoanAmount]),'Loan_default part 412'[Loan_Date_DD_MM_YYYY].[Date])
 ```
-Ribbon chart is used to show "YTD Loan Amount by Credit Score bins and Marital Status"
+Ribbon chart is used to show "YTD loan amount by credit score bins and marital status"
 
-- Step 21 : Decomposition tree is used to show relation between "Total Loan Taken" , "Income Bracket" and "Employement Type"
+- Step 21 : Decomposition tree is used to show relation between "Total loan taken" , "Income bracket" and "Employement type"
 <img width="634" height="309" alt="Decomposition Tree" src="https://github.com/user-attachments/assets/90c26190-4873-42ee-a3c2-26326b6c0b7b" />
 
 # Snapshot of all 3 pages of report 
@@ -196,7 +196,7 @@ Following inferences can be drawn from the Report;
    Average income of "Unemployed" = 82.27 Thousand
 
 ```bash
-   Ecah employment category is earning approximately same.
+   Each employment category's average earning approximately same.
 ```  
   
   ### [3] Average Delay 
