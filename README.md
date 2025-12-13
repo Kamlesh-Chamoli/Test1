@@ -183,7 +183,9 @@ Following inferences can be drawn from the Report;
    Loan taken for purpose "Auto"= 6501 Million
    
    Loan taken for purpose "Other"= 6498 Million
-           
+```bash
+       Top three purpose for loan are "Home" , "Business" and "Education"
+```           
 ### [2] Average Ratings
 
     a) Baggage Handling - 3.63/5
