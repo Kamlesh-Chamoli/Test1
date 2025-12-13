@@ -196,7 +196,7 @@ Following inferences can be drawn from the Report;
    Average income of "Unemployed" = 82.27 Thousand
 
 ```bash
-   Top three purpose of loan are Home , Business and Education
+   Ecah employment category is earning approximately same.
 ```  
   
   ### [3] Average Delay 
