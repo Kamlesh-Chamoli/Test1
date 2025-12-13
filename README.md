@@ -239,8 +239,64 @@ Default rate in 2013 = 11.60
 ```
 
 ### Page 2:Applicant Demographic & Financial Profile
-### E) Default rate(%) per year
+### A) Median loan amount by credit score category
+Median loan amount with "Low" credit score = 128397
 
+Median loan amount with "Medium" credit score = 127764
+
+Median loan amount with "Very Low" credit score = 127515
+
+Median loan amount with "High" credit score = 127149
+```bash
+   People with low credit score buy on an average highest loan
+```
+### B) Average loan amount(high credit score) by age group and maritalstatus
+Adults who are divorced = 127.65 thousand (8.37%), married = 128.35 thousand (8.42%) ,single= 128.13 thousand (8.4%)
+
+Middle aged who are divorced = 128.12 thousand (8.4%), married = 126.74 thousand (8.31%) ,single= 127.14 thousand (8.34%)
+
+Senior citizens who are divorced = 123.97 thousand (8.35%), married = 127.23 thousand (8.34%) ,single= 127.42 thousand (8.35%)
+
+Teen who are divorced = 123.97 thousand (8.13%), married = 124.87 thousand (8.19%) ,single= 128.57 thousand (8.43%)
+
+```bash
+   Each age group person be single,married or divorced having high credit score taking
+   approximately same amount of loan
+```
+### C) Total loan (Adults) by credit score bins
+Loan taken by adults with "Medium" credit score = 4.6 Billion
+
+Loan taken by adults with "High" credit score = 4.5 Billion
+
+Loan taken by adults with "Very" credit score = 2.3 Billion
+
+Loan taken by adults with "Low" credit score = 1.1 Billion
+```bash
+   Among adults "Medium" and "High" credit score people are highest borrower
+```
+### D) Total loan (middle aged) having mortgage /dependents
+Loan taken by middle aged people with "Mortgage" and "Dependents = 3.1 Billion
+
+Loan taken by middle aged people with "Mortgage" but without "Dependents" = 3.1 Billion
+
+Loan taken by middle aged people without "Mortgage" and "Dependents = 3.1 Billion
+
+Loan taken by middle aged people without "Mortgage" and but with "Dependents = 3.1 Billion
+
+```bash
+   All middled aged people with or without mortgage taking approximately same amount of loan.
+```
+### E) Number of loans by education type
+Number of loan taken by "Bachelors" = 64366
+
+Number of loan taken by "High School" = 63903
+
+Number of loan taken by "Masters" = 63541
+
+Number of loan taken by "Phd" = 63537
+```bash
+   The number of loans taken by bachelors is among highest
+```
   ### [3] Average Delay 
   
       a) Average delay in arrival(minutes) - 15.09
