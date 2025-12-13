@@ -175,9 +175,13 @@ Following inferences can be drawn from the Report;
 ### Page 1: Loan Default and overview
 ### A)
    Loan taken for purpose "Home"= 6545 Million
+   
    Loan taken for purpose "Business"= 6522 Million
+   
    Loan taken for purpose "Education"= 6511 Million
+   
    Loan taken for purpose "Auto"= 6501 Million
+   
    Loan taken for purpose "Other"= 6498 Million
            
 ### [2] Average Ratings
