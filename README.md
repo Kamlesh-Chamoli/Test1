@@ -17,7 +17,7 @@ Also, out of 32 billion rupees of loan lended majority is given to high income b
 - Step 2 : Open power query editor & in view tab under Data preview section, check "column distribution", "column quality" & "column profile" options.
 - Step 3 : Also since by default, profile will be opened only for 1000 rows so you need to select "column profiling based on entire dataset".
 - Step 4 : It was observed that in none of the column has errors.
-- Step 5 : A Rounded rectangle is added at top of page using Inset>Shape>Rounded rectangle.Text written inside it for three different pages.
+- Step 5 : A Rounded rectangle is added at top of page using Inset>Shape>Rounded rectangle.Text written inside it "Loan default and overview".
 - Step 6 : DAX is used to find "Total loan"              
 ```bash
                      Loan amount by purpose = SUMX(FILTER('Loan_default part 412',NOT(ISBLANK           
