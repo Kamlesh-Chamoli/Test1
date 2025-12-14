@@ -78,7 +78,7 @@ Another DAX is used to find "Default rate per year"
 ```
 Line graph is used to show "Default rate(%) per Year"
 
-- Step 11 : A Rounded rectangle is added at top of page using Inset>Shape>Rounded rectangle.Text written inside it is "Applicant Demographic & Financial Profile"
+- Step 11 : A Rounded rectangle is added at top of page using Insert>Shape>Rounded rectangle.Text written inside it is "Applicant Demographic & Financial Profile"
 - Step 12 : DAX is used to find "Credit score bins"
 ```bash
 
