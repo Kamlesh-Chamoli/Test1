@@ -225,15 +225,15 @@ Following inferences can be drawn from the Report;
 ### E) Default rate(%) per year  
 Default rate in 2013 = 11.62
 
-Default rate in 2013 = 11.50
+Default rate in 2014 = 11.50
 
-Default rate in 2013 = 11.70
+Default rate in 2015 = 11.70
 
-Default rate in 2013 = 11.75
+Default rate in 2016 = 11.75
 
-Default rate in 2013 = 11.50
+Default rate in 2017 = 11.50
 
-Default rate in 2013 = 11.60
+Default rate in 2018 = 11.60
 ```bash
    Default rate is more than 11% on each year so need to focus on this
 ```
