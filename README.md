@@ -189,9 +189,9 @@ Following inferences can be drawn from the Report;
 ### B) Average income by employment type
    Average income of "Full time employed" = 82.89 Thousand
 
-   Average income of "Self employed" = 82.44 Thousand
+   Average income of "Self employed" = 82.45 Thousand
 
-   Average income of "Part time employed" = 82.38 Thousand
+   Average income of "Part time employed" = 82.39 Thousand
 
    Average income of "Unemployed" = 82.27 Thousand
 
