@@ -255,7 +255,7 @@ Adults who are divorced = 127.65 thousand (8.37%), married = 128.35 thousand (8.
 
 Middle aged who are divorced = 128.12 thousand (8.4%), married = 126.74 thousand (8.31%) ,single= 127.14 thousand (8.34%)
 
-Senior citizens who are divorced = 123.97 thousand (8.35%), married = 127.23 thousand (8.34%) ,single= 127.42 thousand (8.35%)
+Senior citizens who are divorced = 126.92 thousand (8.32%), married = 127.23 thousand (8.34%) ,single= 127.42 thousand (8.35%)
 
 Teen who are divorced = 123.97 thousand (8.13%), married = 124.87 thousand (8.19%) ,single= 128.57 thousand (8.43%)
 
