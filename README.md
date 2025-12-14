@@ -315,7 +315,7 @@ Number of loan taken by "Phd" = 63537
    divorced take highest amount of loan which is 0.67 Billion.In very low category single people with
    0.36 Billion and low category married people with 0.17 Billion of loan taken are the highest.
 ```
-### D) Distribution of total sum into "Income bracket" and "employment type"
+### D) Distribution of total sum into "Income bracket" and "Employment type"
 
 ```bash
  If we expand the graph then we can see that out of total loan of amount 32.6 Billion given maximum is
