@@ -1,7 +1,7 @@
 # Loan Dashboard
  
 ### Power bi Link : [https://app.powerbi.com/groups/me/reports/384d017e-e935-44dc-9e7d-1626c1a36de1/ReportSection](https://app.powerbi.com/links/8kE0wMvlct?ctid=12c1af42-a9a2-48e7-a26e-6a09f52dd431&pbi_source=linkShare) 
-## Problem Statement
+## Problem Statement 
 
 This dashboard helps the company understand their customers better.Through different charts, they get to know their critical areas like total loan taken for different purposes,default rate per year/employment type & year on year loan amount change be it total loan taken or number of loan taken.Therefore, they can improve their loan lending and receiving strategy by identifying these area.
 
